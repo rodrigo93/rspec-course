@@ -16,5 +16,9 @@ describe Calculator do
 	  	result = subject.sum(-2,-3)
 	  	expect(result).to equal(-2+(-3))
 	  end
+
+	  xit 'pending test' do
+	  	result.sum(123,321)
+	  end
 	end
 end
