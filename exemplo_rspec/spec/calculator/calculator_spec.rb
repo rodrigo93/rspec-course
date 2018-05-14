@@ -1,6 +1,9 @@
 require 'calculator' # This is the subject
 
-describe Calculator do
+describe Calculator, "sobre a Calculadora" do
+
+	# subject(:calc) { described_class.new() } # Explicit subject
+
 	context '#sum' do
 	  it 'with positive numbers' do
 	  	result = subject.sum(2,3)
