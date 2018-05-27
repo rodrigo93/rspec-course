@@ -1,8 +1,10 @@
 require 'calculator' # This is the subject
 
 describe Calculator, "sobre a Calculadora" do
+  # Por inferência, o subject já é o Calculator descrito no describe e só irá existir aqui dentro
 
   # subject(:calc) { described_class.new() } # Explicit subject
+
   context '#div' do
     it 'divided by zero' do
       expect{subject.div(3,0)}.to raise_error(ZeroDivisionError)
